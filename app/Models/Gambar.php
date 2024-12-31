@@ -18,7 +18,7 @@ class Gambar extends Model
         'image_desc'
     ];
 
-    protected $primaryKey = 'id_gambar';
+    protected $primaryKey = 'id_image';
 
     use HasFactory;
 }

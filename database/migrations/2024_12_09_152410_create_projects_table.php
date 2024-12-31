@@ -16,14 +16,15 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->unsignedBigInteger('id_project')->autoIncrement();
             $table->string('project_name');
-            $table->string('description');
+            $table->longText('description');
             $table->string('location');
-            $table->year('year');
+            $table->date('year');
             $table->enum('category',['architecture', 'interior', 'foundation projects', 'building performance']);
             $table->string('size');
             $table->string('status');
             $table->string('client');
             $table->string('gambar');
+            $table->timestamps();
         });
     }
 
