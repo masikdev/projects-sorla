@@ -44,6 +44,7 @@ class GambarResource extends Resource
                     FileUpload::make('image_desc')
                         ->label('Image Description')
                         ->image()
+                        ->multiple()
                         ->required(),
                 ]),
             ]);
