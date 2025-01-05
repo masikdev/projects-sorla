@@ -1,0 +1,198 @@
+/* Fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*, *::after, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    display: flex;
+    border-bottom: 1.5px solid rgb(174, 174, 174);
+    margin-bottom: 0.8rem;
+    /* background-color: red; */
+}
+
+
+header nav {
+    max-width: 93%;
+}
+
+header nav.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+    /* background-color: red; */
+}
+
+header nav .navbar-logo a img {
+    width: 7rem;
+    align-self: center
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.3rem;
+
+}
+
+header nav ul li a {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    color: black;
+}
+
+/* Main (Images-gallery) */
+
+.projects-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-gallery .images {
+    columns: 5 340px;
+    max-width: 93%;
+    gap: 0.6rem;
+}
+
+/* Punya Detail */
+section.projects-gallery .images {
+    columns: 5 14%;
+    max-width: 70%;
+}
+
+/* section.projects-gallery .images li {
+    width: 14%;
+} */
+
+section.projects-gallery .images img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.projects-gallery .images .card-img {
+    list-style: none;
+    margin-bottom: 0.3rem;
+}
+
+.projects-gallery .images img {
+    width: 100%;
+}
+
+
+/* Halaman Detail */
+
+.project {
+    max-width: 93%;
+    display: flex;
+    gap: 1.2rem;
+    margin: auto;
+}
+
+
+/* Title and Desc */
+
+section.project-detail {
+    width: 30%;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+
+.title {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.description p {
+    line-height: 1.3rem;
+}
+
+
+/* section.project-detail table{
+    width: 80%;
+} */
+
+/* table, tr, td {
+    border: 1px solid;
+} */
+
+
+    
+
+
+table tr td:nth-child(1) {
+    width: 6rem;
+    vertical-align: baseline;
+}
+ 
+table tr td:nth-child(2) {
+    width: 6rem;
+    vertical-align: bottom;
+}
+
+
+section.project-detail table td {
+    text-align: left;
+}
+
+
+/* Project Gallery */
+
+.project-gallery {
+    width: 100%;
+    /* background-color: royalblue; */
+    
+}
+
+.project-images {
+   width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+
+}
+
+li.project-img {
+    list-style: none;
+}
+
+li.project-img img {
+    width: 16rem;
+    height: 10rem;
+    object-fit: cover;
+    cursor: pointer;
+}
