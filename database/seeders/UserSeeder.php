@@ -15,9 +15,15 @@ class UserSeeder extends Seeder
     public function run()
     {
         $data = [
+            // [
+            //     'name' => 'Owner',
+            //     'email' => 'owner@sorla.com',
+            //     'password' => bcrypt('owner12345'),
+                
+            // ],
             [
-                'name' => 'Owner',
-                'email' => 'owner@sorla.com',
+                'name' => 'Admin',
+                'email' => 'owner2@sorla.com',
                 'password' => bcrypt('owner12345'),
             ]
         ];

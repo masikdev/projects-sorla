@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gambar;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        //
+        $projects = Project::all();
+        return view('index',compact('projects'));
     }
 
     /**
@@ -44,9 +46,11 @@ class ProjectController extends Controller
      * @param  \App\Models\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Project $project)
+    public function show($id_project)
     {
-        //
+        $project = Project::find($id_project);
+        $gambarProject = Gambar::where('id_project',$id_project)->get();
+        return view('detailbaru',compact('project','gambarProject'));
     }
 
     /**
